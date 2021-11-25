@@ -9,7 +9,7 @@ class Header extends Component {
     super(props);
     
     this.state = {
-      counter: 10,
+      counter: 0,
     }
 
     this.handleClick = this.handleClick.bind(this);
@@ -25,7 +25,6 @@ class Header extends Component {
     return (
       <div>
         <h1>{ name }</h1>
-        Sou um header
         <button onClick={ this.handleClick }>{ counter }</button>
       </div>
     );
